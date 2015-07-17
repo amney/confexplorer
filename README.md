@@ -48,5 +48,5 @@ the browser which uses d3.js to generate a pack diagram.
 
 ## Demo
     
-![Demo](http://zippy.gfycat.com/ShamefulSnoopyKookaburra.gif)
+![Demo](https://raw.githubusercontent.com/amney/confexplorer/master/demo.gif)
   
