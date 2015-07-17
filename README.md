@@ -3,8 +3,9 @@
 ## Installation
 
 confexplorer requires the following packages
-    - Flask
-    - Requests
+
+* Flask 
+* Requests
     
 Install them using ``pip install -r requirements.txt``
 
@@ -47,4 +48,5 @@ the browser which uses d3.js to generate a pack diagram.
 
 ## Demo
     
+![Demo](http://gfycat.com/CooperativeClearcutGhostshrimp)
   
