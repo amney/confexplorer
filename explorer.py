@@ -140,4 +140,4 @@ if __name__ == '__main__':
     password = args.password
     MAX_DEPTH = args.depth
 
-    app.run(debug=True, host=args.ip, port=args.port)
+    app.run(debug=True, host=args.ip, port=int(args.port))
