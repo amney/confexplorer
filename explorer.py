@@ -130,7 +130,8 @@ if __name__ == '__main__':
                         default=2,
                         type=int,
                         help='Maximum config recursion depth. DEFAULT=2')
-
+    parser.add_argument('--ip', default="127.0.0.1", help='IP address to listen on.')
+    parser.add_argument('--port', default="5000", help='Port number to listen on.')
 
     args = parser.parse_args()
 
@@ -139,4 +140,4 @@ if __name__ == '__main__':
     password = args.password
     MAX_DEPTH = args.depth
 
-    app.run(debug=True)
+    app.run(debug=True, host=args.ip, port=args.port)
