@@ -27,6 +27,8 @@ Once the requirements have been installed launch the Flask server:
                             APIC login password.
       -d DEPTH, --depth DEPTH
                             Maximum config recursion depth. DEFAULT=2
+      --address ADDRESS     Address Flask server listens on. DEFAULT=127.0.0.1
+      --port PORT           Port Flask server listens on. DEFAULT=5000
                             
                             
 For example:

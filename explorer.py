@@ -130,7 +130,13 @@ if __name__ == '__main__':
                         default=2,
                         type=int,
                         help='Maximum config recursion depth. DEFAULT=2')
-
+    parser.add_argument('--host',
+                        default='127.0.0.1',
+                        help='Address Flask server listens on. DEFAULT=127.0.0.1')
+    parser.add_argument('--port',
+                        default=5000,
+                        type=int,
+                        help='Port Flask server listens on. DEFAULT=5000')
 
     args = parser.parse_args()
 
@@ -138,5 +144,7 @@ if __name__ == '__main__':
     login = args.login
     password = args.password
     MAX_DEPTH = args.depth
+    host = args.host
+    port = args.port
 
-    app.run(debug=True)
+    app.run(debug=True, host=host, port=port)
