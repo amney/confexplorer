@@ -10,8 +10,10 @@ app = Flask(__name__, template_folder='')
 def apic_login(session, apic_url, apic_username, apic_password):
     data = {
         "aaaUser": {
-            "name": apic_username,
-            "pwd": apic_password
+            "attributes": {
+                "name": apic_username,
+                "pwd": apic_password
+            }
         }
     }
     session.post(url=apic_url + "/api/aaaLogin.json", data=json.dumps(data), verify=False)
